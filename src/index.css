@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap');
+*{margin:0;padding:0;user-select: none}body{background: #343a40 !important}
+/* html {scroll-behavior: smooth;} */
+.container-fluid{justify-content: center !important;}
+/*================== onscroll ========================*/
+/* width */
+::-webkit-scrollbar {width: 5px;}
+/* Track */
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px grey;border-radius: 10px;}
+/* Handle */
+::-webkit-scrollbar-thumb {background: #00f260;border-radius: 100px;}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {background: #07d459;}
+/*================== /onscroll ========================*/
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Appleft */
+a{color: green!important}a:hover{text-decoration: none!important;color:#00f260!important}
+.app-left{margin:23px 0}
+.left-avatar{width:130px;height:130px;object-fit:contain;border-radius: 50%}
+.left-icon{width:25px;height:25px}
+.left-name{font-family: kaushan Script;margin:20px 0;font-size: 1.4rem}
+.left-name>span{color: #00f260}
+.left-item{margin:6px 0 6px 0;line-height: 40px;font-size:1.05rem}
+.left-title{background:#f8f9fa;border-radius: 30px}
+.left-contact{background:#f8f9fa;padding:2px}
+.left-email{background: #00f260;border-radius: 30px;margin:15px 25px 0px;cursor: pointer;color: #fff;}.left-email:hover{opacity:.8}
+/* =====Right Page ===== */
+/* Navbar */
+.navbar-active{font-size: 1.7rem;color:#343a40;font-weight: bold;border-bottom:4px solid #00f260}
+.navbar-items{display: flex}
+.navbar-item{margin:0 0 0 20px;color:#343a40;font-weight:500;font-size: 1.2rem;cursor: pointer}.navbar-item:hover{color:#00f260}
+/* About */
+.about{padding:20px}
+.about-intro{font-size: 1.1rem;padding: 20px}
+.about-container{background: #dbdddf;padding: 20px;}
+.about-heading{color:#343a40;font-size:25px;font-weight: bold;background:#f8f9fa}
+.skill-card{margin:10px;padding: 10;display: flex;border-radius: 10px;background:#f8f9fa;}
+.skill-card-icon{width:25px;height:25px;}
+/* Resume */
+.resume{margin:20px 0;}
+.resume-heading,.resume-lg-heading{margin:0 10px;font-size: 1.7rem;font-weight: 700;color:#343a40;}
+.resume-body{margin:10px 0;}
+.resume-title{font-weight: 500;font-size: 20px;}
+.resume-details{font-size: 1rem;padding: 5px 0;}
+.resume-lg-heading{color: #343a40;font-size: 22px;font-weight: 700;margin-bottom:2vw;}
+
+/* Resumebar */
+.bar{width: 90%;background:#00f260;border-radius: 20px;margin-bottom:12px;}
+.bar-icon{width: 15px;height: 15px;}
+.bar-wrapper{background-image: linear-gradient(135deg, rgb(68, 202, 201) 0%,rgb(252, 255, 114) 100%);
+  color:#fff;font-weight: 500;font-size: 18px;border-radius: 20px;padding: 2px 14px;}
+
+/* Projects */
+.projects{margin:30px 0;}
+.pNavbar{display: flex;}
+.pNavbar div{margin:0 5px;font-size:1rem;cursor: pointer;}
+/* Project Card */
+.pCard-wrapper{margin:10px 0;width: 100%;height: 28vh;}
+.pCard-image{width:100%;height:80%;border:1px solid #00f260;}
+.pCard-icon{width:25px;height: 25px;}
+.pCard-title{margin:12px 0;font-size: 1;display:flex;align-items:center;justify-content: center;}
+
+/* -- */
+.leftmv{padding: 1.8vw 0;}
+/* @media query */
+@media screen and (max-width:568px){
+  .navbar-item{font-size: 20px!important;}
+  .navbar-active{font-size: 25px!important;}
+  .resume-heading{font-size: 1.5rem!important;}
+  .leftmv{padding:0 !important;}
 }
